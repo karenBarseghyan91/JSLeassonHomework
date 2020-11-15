@@ -52,10 +52,10 @@ function numType(myNum){
         for(let i=0; i < size; i++ ){
             let row='';
             for(let j=0; j<size; j++){
-                if (j==i || j==size-i-1){
-                    row=row+sim;
+                if (j==i || j==size-i-1){       
+                    row=row+form;
                 }else{
-                    row = row+"-";
+                    row = row+" ";
                 }                
             }
             row = row + '\n';
