@@ -94,11 +94,9 @@ function integersSequence(arr){
         if(arr[i]<min){
             min=arr[i];
         }
-        //console.log('min = '+ min);
         if(arr[i] >max){
             max=arr[i];
         } 
-        //console.log('max = '+ max)
     }
     console.log(min,max);
     let newArr=[];
@@ -136,3 +134,20 @@ function deleteEvenNumbers(arr){
     
     return resultArr;
 }
+
+
+
+
+
+///////////work home///
+function nearNumber([arr],number){
+    let result=Math.abs(arr[0]-number);
+    for(let i=0; i<arr.lenght; i++){
+      let distance=Math.abs(arr[i]-number)
+      if(result<distance){
+        result=distance;
+        
+      }
+    }
+    return result;
+  }
